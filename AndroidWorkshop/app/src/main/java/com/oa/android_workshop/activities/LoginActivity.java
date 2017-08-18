@@ -33,7 +33,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View view) {
                 if (vUsername.getText().toString().length() == 0 ||
-                        vPassword.toString().length() == 0) {
+                        vPassword.getText().toString().length() == 0) {
                     Toast.makeText(LoginActivity.this, "Username and Password are required", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
