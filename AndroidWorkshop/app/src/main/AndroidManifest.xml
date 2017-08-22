@@ -27,6 +27,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".activities.CompanyDetailsActivity">
         </activity>
+        <activity android:name=".activities.WebViewActivity">
+        </activity>
     </application>
 
 </manifest>
