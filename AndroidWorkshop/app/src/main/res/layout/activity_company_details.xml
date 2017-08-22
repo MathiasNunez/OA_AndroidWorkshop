@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/spacing_large"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_huge"
+                android:textStyle="bold"
+                tools:text="Google"/>
+
+            <TableLayout
+                android:id="@+id/labels_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_margin="@dimen/spacing_normal"
+                android:padding="@dimen/spacing_small">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:text="Phone:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"
+                        android:textStyle="bold"
+                        tools:text="095123123"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:text="Address:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"/>
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"
+                        android:textStyle="bold"
+                        tools:text="Ramba 1234 esq Yaco"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:text="Web Site:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"/>
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_tiny"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_large"
+                        android:textStyle="bold"
+                        tools:text="wwww.google.com"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
