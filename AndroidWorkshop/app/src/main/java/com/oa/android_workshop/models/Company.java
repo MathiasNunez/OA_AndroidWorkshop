@@ -18,6 +18,7 @@ public class Company implements Serializable{
     private String name;
 
     @SerializedName("direction")
+    @Expose
     private String address;
 
     @SerializedName("phone")
