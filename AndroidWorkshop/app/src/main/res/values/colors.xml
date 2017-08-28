@@ -3,4 +3,7 @@
     <color name="colorPrimary">#1B5032</color>
     <color name="colorPrimaryDark">#1B5032</color>
     <color name="colorAccent">#199951</color>
+
+    <color name="progress_bar_bg">#64000000</color>
+
 </resources>
