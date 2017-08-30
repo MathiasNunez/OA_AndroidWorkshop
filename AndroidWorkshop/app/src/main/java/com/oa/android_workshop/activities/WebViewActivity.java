@@ -14,6 +14,7 @@ public class WebViewActivity extends Activity {
         String url = getIntent().getExtras().getString("url");
         WebView mWebView = new WebView(this);
         mWebView.getSettings().setLoadWithOverviewMode(true);
+        mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.setWebChromeClient(new WebChromeClient());
         mWebView.setWebViewClient(new WebViewClient());
         mWebView.loadUrl(url);
